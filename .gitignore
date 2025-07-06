@@ -47,3 +47,5 @@ Thumbs.db
 
 # pnpm
 .pnpm-debug.log* 
+# Local Netlify folder
+.netlify

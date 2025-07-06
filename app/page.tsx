@@ -24,10 +24,10 @@ import Image from "next/image"
 
 export default function SynapseLanding() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white mx-auto">
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
-        <div className="container flex h-16 items-center justify-between px-4 md:px-6">
+        <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6 max-w-7xl">
           <div className="flex items-center space-x-2">
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-slate-800 to-emerald-600">
               <Brain className="h-5 w-5 text-white" />
@@ -71,7 +71,7 @@ export default function SynapseLanding() {
 
       {/* Hero Section */}
       <section className="py-20 md:py-32 bg-gradient-to-br from-slate-50 via-emerald-50 to-teal-50">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl">
           <div className="flex flex-col items-center text-center space-y-8">
             <Badge variant="secondary" className="px-4 py-2 bg-emerald-100 text-emerald-800 border-emerald-200">
               🧠 AI-Native Infrastructure Platform
@@ -107,14 +107,14 @@ export default function SynapseLanding() {
               </Button>
             </div>
 
-            <div className="pt-8 w-full max-w-4xl">
+            <div className="pt-8 w-full max-w-5xl mx-auto">
               <div className="relative">
                 <Image
-                  src="/placeholder.svg?height=500&width=900"
+                  src="/hero.png"
                   alt="Synapse AI Infrastructure Platform Dashboard"
-                  width={900}
-                  height={500}
-                  className="rounded-lg shadow-2xl border border-purple-200"
+                  width={1200}
+                  height={400}
+                  className="w-full h-auto rounded-lg shadow-2xl border border-purple-200 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-600/20 to-transparent rounded-lg"></div>
               </div>
@@ -125,7 +125,7 @@ export default function SynapseLanding() {
 
       {/* Problem Statement */}
       <section className="py-20 md:py-32 bg-white">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl">
           <div className="text-center space-y-4 mb-16">
             <Badge variant="outline" className="border-red-200 text-red-700">
               The Problem
@@ -182,7 +182,7 @@ export default function SynapseLanding() {
 
       {/* Solution Section */}
       <section className="py-20 md:py-32 bg-gradient-to-br from-slate-50 to-emerald-50">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl">
           <div className="text-center space-y-4 mb-16">
             <Badge variant="outline" className="border-green-200 text-green-700 bg-green-50">
               The Solution
@@ -245,13 +245,13 @@ export default function SynapseLanding() {
               </div>
             </div>
 
-            <div className="relative">
+            <div className="relative w-full max-w-4xl mx-auto">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/Problem and Solution.png"
                 alt="Synapse AI Architecture Diagram"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-xl border"
+                width={1000}
+                height={350}
+                className="w-full h-auto rounded-lg shadow-xl border object-cover"
               />
             </div>
           </div>
@@ -260,7 +260,7 @@ export default function SynapseLanding() {
 
       {/* How It Works */}
       <section id="how-it-works" className="py-20 md:py-32 bg-white">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl">
           <div className="text-center space-y-4 mb-16">
             <Badge variant="outline">How It Works</Badge>
             <h2 className="text-3xl md:text-5xl font-bold">From idea to production in 5 steps</h2>
@@ -310,12 +310,24 @@ export default function SynapseLanding() {
               <p className="text-sm text-gray-600">Production-grade infrastructure goes live automatically</p>
             </div>
           </div>
+
+                    <div className="mt-16 text-center">
+            <div className="relative max-w-5xl mx-auto">
+              <Image
+                src="/Architecture.png"
+                alt="Traditional DevOps vs Synapse Approach"
+                width={1200}
+                height={350}
+                className="w-full h-auto rounded-lg shadow-xl border object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Target Customers */}
       <section id="customers" className="py-20 md:py-32 bg-gray-50">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl">
           <div className="text-center space-y-4 mb-16">
             <Badge variant="outline">Who We Serve</Badge>
             <h2 className="text-3xl md:text-5xl font-bold">Built for high-leverage engineers</h2>
@@ -370,7 +382,7 @@ export default function SynapseLanding() {
 
       {/* Competitive Advantage */}
       <section className="py-20 md:py-32 bg-white">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl">
           <div className="text-center space-y-4 mb-16">
             <Badge variant="outline">Why Synapse Wins</Badge>
             <h2 className="text-3xl md:text-5xl font-bold">We're not just better—we're different</h2>
@@ -504,7 +516,7 @@ export default function SynapseLanding() {
 
       {/* Team Section */}
       <section className="py-20 md:py-32 bg-gradient-to-br from-slate-50 to-emerald-50">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl">
           <div className="text-center space-y-4 mb-16">
             <Badge variant="outline">The Team</Badge>
             <h2 className="text-3xl md:text-5xl font-bold">Built by AI infrastructure pioneers</h2>
@@ -671,7 +683,7 @@ export default function SynapseLanding() {
 
       {/* CTA Section */}
       <section className="py-20 md:py-32 bg-gradient-to-br from-slate-800 via-emerald-700 to-teal-600 text-white">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl">
           <div className="text-center space-y-8 max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-5xl font-bold">Ready to eliminate DevOps bottlenecks?</h2>
             <p className="text-xl opacity-90">
@@ -699,7 +711,7 @@ export default function SynapseLanding() {
 
       {/* Footer */}
       <footer id="contact" className="py-16 bg-gray-900 text-white">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
@@ -806,7 +818,7 @@ export default function SynapseLanding() {
             </div>
           </div>
 
-          <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+          <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 max-w-7xl mx-auto">
             <p>&copy; {new Date().getFullYear()} Synapse. All rights reserved.</p>
           </div>
         </div>

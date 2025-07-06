@@ -53,12 +53,10 @@ export default function SynapseLanding() {
           </nav>
 
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="sm" className="hidden md:inline-flex">
-              Sign In
-            </Button>
             <Button
               size="sm"
               className="bg-gradient-to-r from-slate-800 to-emerald-600 hover:from-slate-900 hover:to-emerald-700"
+              onClick={() => window.open('mailto:hello@synapse.ai?subject=Start Free Trial&body=I\'m interested in starting a free trial of Synapse.', '_blank')}
             >
               Start Free Trial
             </Button>
@@ -94,6 +92,7 @@ export default function SynapseLanding() {
               <Button
                 size="lg"
                 className="px-8 bg-gradient-to-r from-slate-800 to-emerald-600 hover:from-slate-900 hover:to-emerald-700"
+                onClick={() => window.open('mailto:hello@synapse.ai?subject=Get Started with Synapse&body=I\'m interested in starting to build with Synapse. Please provide access to the platform.', '_blank')}
               >
                 Start Building Now
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -102,6 +101,7 @@ export default function SynapseLanding() {
                 variant="outline"
                 size="lg"
                 className="px-8 border-emerald-200 text-emerald-800 hover:bg-emerald-50 bg-transparent"
+                onClick={() => window.open('https://calendly.com/synapse-demo', '_blank')}
               >
                 Watch Demo
               </Button>
@@ -690,7 +690,12 @@ export default function SynapseLanding() {
               Join the AI infrastructure revolution. Build production-grade cloud systems in minutes, not months.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="px-8 bg-white text-slate-800 hover:bg-gray-100">
+              <Button 
+                size="lg" 
+                variant="secondary" 
+                className="px-8 bg-white text-slate-800 hover:bg-gray-100"
+                onClick={() => window.open('mailto:hello@synapse.ai?subject=Free Trial Request&body=I\'m interested in a free trial of Synapse. Please provide access and onboarding details.', '_blank')}
+              >
                 Start Free Trial
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
@@ -698,6 +703,7 @@ export default function SynapseLanding() {
                 size="lg"
                 variant="outline"
                 className="px-8 border-white text-white hover:bg-white hover:text-slate-800 bg-transparent"
+                onClick={() => window.open('https://calendly.com/synapse-demo/30min', '_blank')}
               >
                 Book a Demo
               </Button>
@@ -724,16 +730,36 @@ export default function SynapseLanding() {
                 The AI-native infrastructure platform that builds, heals, and explains your cloud systems autonomously.
               </p>
               <div className="flex space-x-4">
-                <Button size="sm" variant="ghost" className="p-2 hover:bg-gray-800">
+                <Button 
+                  size="sm" 
+                  variant="ghost" 
+                  className="p-2 hover:bg-gray-800"
+                  onClick={() => window.open('https://twitter.com/synapse_ai', '_blank')}
+                >
                   <Twitter className="h-4 w-4" />
                 </Button>
-                <Button size="sm" variant="ghost" className="p-2 hover:bg-gray-800">
+                <Button 
+                  size="sm" 
+                  variant="ghost" 
+                  className="p-2 hover:bg-gray-800"
+                  onClick={() => window.open('https://linkedin.com/company/synapse-ai', '_blank')}
+                >
                   <Linkedin className="h-4 w-4" />
                 </Button>
-                <Button size="sm" variant="ghost" className="p-2 hover:bg-gray-800">
+                <Button 
+                  size="sm" 
+                  variant="ghost" 
+                  className="p-2 hover:bg-gray-800"
+                  onClick={() => window.open('https://github.com/YarivTrabelsi/Synapse-landing', '_blank')}
+                >
                   <Github className="h-4 w-4" />
                 </Button>
-                <Button size="sm" variant="ghost" className="p-2 hover:bg-gray-800">
+                <Button 
+                  size="sm" 
+                  variant="ghost" 
+                  className="p-2 hover:bg-gray-800"
+                  onClick={() => window.open('mailto:hello@synapse.ai', '_blank')}
+                >
                   <Mail className="h-4 w-4" />
                 </Button>
               </div>
